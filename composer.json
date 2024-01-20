@@ -1,0 +1,28 @@
+{
+    "name": "adinan-cenci/generic-rest-api",
+    "description": "Generic library to build integration with rest APIs",
+    "type": "library",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/adinan-cenci/psr-18"
+        }
+    ],
+    "authors": [
+        {
+            "name": "Adinan Cenci",
+            "email": "adinancenci@protonmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "AdinanCenci\\GenericRestApi\\": "src/"
+        }
+    },
+    "require": {
+        "adinan-cenci/psr-18": "dev-master",
+        "adinan-cenci/file-cache": "dev-master"
+    }
+}
