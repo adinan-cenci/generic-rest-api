@@ -2,6 +2,8 @@
 use AdinanCenci\FileCache\Cache;
 use AdinanCenci\Psr18\Client;
 
+use AdinanCenci\GenericRestApi\Exception\UserError;
+
 //---------------------------------------
 
 require '../vendor/autoload.php';
@@ -31,3 +33,11 @@ echo '<br>';
 echo '<pre>';
 print_r($luke);
 echo '</pre>';
+
+//---------------------------------------
+
+try {
+    $swapi->trigger404();
+} catch (UserError $e) {
+    echo $e->getMessage();
+}

@@ -1,6 +1,9 @@
 <?php
 namespace AdinanCenci\GenericRestApi;
 
+use AdinanCenci\GenericRestApi\Exception\UserError;
+use AdinanCenci\GenericRestApi\Exception\ServerError;
+
 use Psr\SimpleCache\CacheInterface;
 use Psr\Http\Message\RequestFactoryInterface;
 use Psr\Http\Message\RequestInterface;
@@ -92,10 +95,8 @@ abstract class ApiBase
         $response = $this->request($request, $options);
         $statusCode = $response->getStatusCode();
 
-        if ($statusCode >= 200 && $statusCode < 400) {
-            $body = (string) $response->getBody();
-            return json_decode($body);
-        }
+        $body = (string) $response->getBody();
+        return json_decode($body);
 
         return null;
     }
@@ -143,8 +144,10 @@ abstract class ApiBase
         $response = $this->httpClient->sendRequest($request);
         $statusCode = $response->getStatusCode();
 
-        if ($statusCode == 0) {
-
+        if ($statusCode >= 400 && $statusCode < 500) {
+            throw new UserError($this->generateExceptionMessage($response), $request, $response);
+        } else if ($statusCode >= 500) {
+            throw new ServerError($this->generateExceptionMessage($response), $request, $response);
         }
 
         $this->cacheResponse($request, $response, $this->getTimeToLive($options));
@@ -269,5 +272,10 @@ abstract class ApiBase
     protected function getFullUrl(string $endPoint) : string
     {
         return $this->baseUrl . $endPoint;
+    }
+
+    protected function generateExceptionMessage(ResponseInterface $response) : string
+    {
+        return (string) $response->getBody();
     }
 }

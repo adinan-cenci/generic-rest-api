@@ -18,7 +18,8 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "AdinanCenci\\GenericRestApi\\": "src/"
+            "AdinanCenci\\GenericRestApi\\": "src/",
+            "AdinanCenci\\GenericRestApi\\Exception\\": "src/Exception/"
         }
     },
     "require": {

@@ -9,4 +9,9 @@ class Swapi extends ApiBase
     {
         return $this->getJson("people/$personId/", [], $response);
     }
+
+    public function trigger404() 
+    {
+        return $this->getJson("does-not-exist", [], $response);
+    }
 }
