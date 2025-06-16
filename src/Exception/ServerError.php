@@ -1,7 +1,7 @@
-<?php 
+<?php
+
 namespace AdinanCenci\GenericRestApi\Exception;
 
-class ServerError extends Error 
+class ServerError extends Error
 {
-    
 }

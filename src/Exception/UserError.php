@@ -1,7 +1,7 @@
-<?php 
+<?php
+
 namespace AdinanCenci\GenericRestApi\Exception;
 
-class UserError extends Error 
+class UserError extends Error
 {
-    
 }
