@@ -95,19 +95,18 @@ abstract class ApiBase
      * @param Psr\Http\Message\ResponseInterface|null $response
      *   The response object, in case we need it.
      *
-     * @return \stdClass|null
+     * @return \stdClass|array|null
      *   The decoded json.
      */
-    public function getJson(string $endPoint, array $options = [], &$response = null): ?\stdClass
+    public function getJson(string $endPoint, array $options = [], &$response = null)
     {
         $request  = $this->createRequest($endPoint);
         $response = $this->request($request, $options);
         $statusCode = $response->getStatusCode();
 
-        $body = (string) $response->getBody();
-        return json_decode($body);
-
-        return null;
+        $json = (string) $response->getBody();
+        $data = json_decode($json);
+        return $data;
     }
 
     /**
