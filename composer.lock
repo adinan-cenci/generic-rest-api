@@ -4,77 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f00d02ff9819a004763df6c63078060f",
+    "content-hash": "8fe3682a7a19fa4ba283703160cac128",
     "packages": [
         {
-            "name": "adinan-cenci/file-cache",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/adinan-cenci/file-cache.git",
-                "reference": "f8a550fada3052a1e3d043c9fe7047a48eae6313"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/adinan-cenci/file-cache/zipball/f8a550fada3052a1e3d043c9fe7047a48eae6313",
-                "reference": "f8a550fada3052a1e3d043c9fe7047a48eae6313",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3",
-                "psr/simple-cache": "^1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "6.3"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "AdinanCenci\\FileCache\\": "src/",
-                    "AdinanCenci\\FileCache\\Exceptions\\": "src/Exceptions/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Adinan Cenci",
-                    "email": "adinancenci@protonmail.com",
-                    "role": "developer"
-                }
-            ],
-            "description": "A PSR-16 implementation around the PHP Filesystem.",
-            "keywords": [
-                "cache",
-                "files",
-                "psr-16"
-            ],
-            "support": {
-                "issues": "https://github.com/adinan-cenci/file-cache/issues",
-                "source": "https://github.com/adinan-cenci/file-cache/tree/v2.0.1"
-            },
-            "time": "2021-01-12T09:43:41+00:00"
-        },
-        {
             "name": "adinan-cenci/psr-17",
-            "version": "v1.0.8",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adinan-cenci/psr-17.git",
-                "reference": "181a881171eaa96614914f880e59f73a48aafc39"
+                "reference": "c10a66711b823e67d65d968e147b570f1c1ebd17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adinan-cenci/psr-17/zipball/181a881171eaa96614914f880e59f73a48aafc39",
-                "reference": "181a881171eaa96614914f880e59f73a48aafc39",
+                "url": "https://api.github.com/repos/adinan-cenci/psr-17/zipball/c10a66711b823e67d65d968e147b570f1c1ebd17",
+                "reference": "c10a66711b823e67d65d968e147b570f1c1ebd17",
                 "shasum": ""
             },
             "require": {
-                "adinan-cenci/psr-7": "^1.1.3",
-                "psr/http-factory": "^1.0"
+                "adinan-cenci/psr-7": "^2.0",
+                "psr/http-factory": "^1.1"
             },
             "require-dev": {
                 "phpunit/phpunit": "9.5.x-dev"
@@ -98,33 +46,32 @@
             ],
             "support": {
                 "issues": "https://github.com/adinan-cenci/psr-17/issues",
-                "source": "https://github.com/adinan-cenci/psr-17/tree/v1.0.8"
+                "source": "https://github.com/adinan-cenci/psr-17/tree/v2.1.0"
             },
-            "time": "2023-09-08T00:27:44+00:00"
+            "time": "2025-06-11T00:10:21+00:00"
         },
         {
             "name": "adinan-cenci/psr-18",
-            "version": "dev-master",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adinan-cenci/psr-18.git",
-                "reference": "9bc13673f8f0d523b4c8a37a426bf35d8ea09697"
+                "reference": "5b8488b031d18cde815f9de2471544adc95b5edc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adinan-cenci/psr-18/zipball/9bc13673f8f0d523b4c8a37a426bf35d8ea09697",
-                "reference": "9bc13673f8f0d523b4c8a37a426bf35d8ea09697",
+                "url": "https://api.github.com/repos/adinan-cenci/psr-18/zipball/5b8488b031d18cde815f9de2471544adc95b5edc",
+                "reference": "5b8488b031d18cde815f9de2471544adc95b5edc",
                 "shasum": ""
             },
             "require": {
-                "adinan-cenci/psr-17": "^1.0",
-                "adinan-cenci/psr-7": "^1.1.3",
+                "adinan-cenci/psr-17": ">=1.0",
+                "adinan-cenci/psr-7": ">=1.1.3",
                 "psr/http-client": "^1.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.3"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -147,31 +94,31 @@
                 "psr-18"
             ],
             "support": {
-                "source": "https://github.com/adinan-cenci/psr-18/tree/master",
+                "source": "https://github.com/adinan-cenci/psr-18/tree/v1.0.1",
                 "issues": "https://github.com/adinan-cenci/psr-18/issues"
             },
-            "time": "2023-10-29T20:22:57+00:00"
+            "time": "2025-06-12T22:28:56+00:00"
         },
         {
             "name": "adinan-cenci/psr-7",
-            "version": "v1.1.3",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/adinan-cenci/psr-7.git",
-                "reference": "c148ca67404960aa2b978c694f0e929d18f9f5ec"
+                "reference": "d510a6c16f08809a187ec7328a7de8232d976feb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/adinan-cenci/psr-7/zipball/c148ca67404960aa2b978c694f0e929d18f9f5ec",
-                "reference": "c148ca67404960aa2b978c694f0e929d18f9f5ec",
+                "url": "https://api.github.com/repos/adinan-cenci/psr-7/zipball/d510a6c16f08809a187ec7328a7de8232d976feb",
+                "reference": "d510a6c16f08809a187ec7328a7de8232d976feb",
                 "shasum": ""
             },
             "require": {
-                "psr/http-message": "^1.0"
+                "psr/http-message": "^2"
             },
             "require-dev": {
-                "guzzlehttp/psr7": "~1",
-                "php-http/psr7-integration-tests": "^1.1"
+                "guzzlehttp/psr7": "^2.7",
+                "php-http/psr7-integration-tests": "^1.4"
             },
             "type": "library",
             "autoload": {
@@ -192,13 +139,13 @@
             ],
             "support": {
                 "issues": "https://github.com/adinan-cenci/psr-7/issues",
-                "source": "https://github.com/adinan-cenci/psr-7/tree/v1.1.3"
+                "source": "https://github.com/adinan-cenci/psr-7/tree/v2.0.1"
             },
-            "time": "2023-08-09T22:54:48+00:00"
+            "time": "2025-06-11T00:00:21+00:00"
         },
         {
             "name": "psr/http-client",
-            "version": "dev-master",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-client.git",
@@ -214,7 +161,6 @@
                 "php": "^7.0 || ^8.0",
                 "psr/http-message": "^1.0 || ^2.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -251,23 +197,22 @@
         },
         {
             "name": "psr/http-factory",
-            "version": "dev-master",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-factory.git",
-                "reference": "7037f4b0950474e9d1350e8df89b15f1842085f6"
+                "reference": "2b4765fddfe3b508ac62f829e852b1501d3f6e8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/7037f4b0950474e9d1350e8df89b15f1842085f6",
-                "reference": "7037f4b0950474e9d1350e8df89b15f1842085f6",
+                "url": "https://api.github.com/repos/php-fig/http-factory/zipball/2b4765fddfe3b508ac62f829e852b1501d3f6e8a",
+                "reference": "2b4765fddfe3b508ac62f829e852b1501d3f6e8a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.0",
+                "php": ">=7.1",
                 "psr/http-message": "^1.0 || ^2.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -303,20 +248,20 @@
             "support": {
                 "source": "https://github.com/php-fig/http-factory"
             },
-            "time": "2023-09-22T11:16:44+00:00"
+            "time": "2024-04-15T12:06:14+00:00"
         },
         {
             "name": "psr/http-message",
-            "version": "1.1",
+            "version": "2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
-                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba"
+                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
-                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71",
                 "shasum": ""
             },
             "require": {
@@ -325,7 +270,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1.x-dev"
+                    "dev-master": "2.0.x-dev"
                 }
             },
             "autoload": {
@@ -340,7 +285,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Common interface for HTTP messages",
@@ -354,9 +299,9 @@
                 "response"
             ],
             "support": {
-                "source": "https://github.com/php-fig/http-message/tree/1.1"
+                "source": "https://github.com/php-fig/http-message/tree/2.0"
             },
-            "time": "2023-04-04T09:50:52+00:00"
+            "time": "2023-04-04T09:54:51+00:00"
         },
         {
             "name": "psr/simple-cache",
@@ -412,14 +357,11 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "adinan-cenci/psr-18": 20,
-        "adinan-cenci/file-cache": 20
-    },
+    "minimum-stability": "stable",
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
