@@ -5,7 +5,7 @@ It makes http calls easier to handle.
 
 It depends on PSR-7, PSR-17 and PSR-18.
 
-Optionaly uses PSR-16 for caching, useful when you access to an API is restricted by a quota.
+Optionaly uses PSR-16 for caching, useful when you access to an API is restricted by a quota or just want to speed up things.
 
 ## License
 MIT
